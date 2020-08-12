@@ -5,6 +5,7 @@ import java.awt.Graphics;
 public class SnakeSegment {
 	private Location location;
 	private int size;
+	public String ID = "";
 
 	public SnakeSegment(Location loc, int size) {
 		this.location = loc;
@@ -23,4 +24,9 @@ public class SnakeSegment {
 		g.setColor(Snake.SNAKE_COLOR);
 		g.drawRect(location.x * size, location.y * size, size, size);;
 	}
+	
+	public void setID(String id) {
+		ID = id;
+	}
+	
 }
